@@ -1,0 +1,25 @@
+<div class="home-container">
+  <h2>Bem-vindo, {{ user?.nome }}!</h2>
+  <p>Perfil: {{ user?.isAdmin ? 'Admin' : 'Funcionário' }}</p>
+
+  <div class="card-grid">
+    <div class="card" *ngFor="let card of mockCards">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.description }}</p>
+    </div>
+  </div>
+
+  <h2>Usuários</h2>
+  <ul>
+    <li *ngFor="let u of mockUsers">
+      {{ u.nome }} - {{ u.setor }} - {{ u.status }}
+    </li>
+  </ul>
+
+  <h2>Tarefas</h2>
+  <ul>
+    <li *ngFor="let t of mockTasks">
+      {{ t.titulo }} - {{ t.prazo }} - {{ t.concluido ? 'Concluído' : 'Pendente' }}
+    </li>
+  </ul>
+</div>
