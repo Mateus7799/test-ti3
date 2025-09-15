@@ -17,7 +17,14 @@ export class HomeComponent {
     role: 'Admin',
   };
 
-  // Cards mockados
+  // Menu mockado (sidebar) - Home é o primeiro item
+  menuItems = [
+    { label: 'Home', route: '/home', icon: 'pi pi-home' },
+    { label: 'Relatórios', route: '/relatorios', icon: 'pi pi-chart-line' },
+    { label: 'Usuários', route: '/usuarios', icon: 'pi pi-users' },
+  ];
+
+  // Cards mockados (conteúdo principal)
   mockCards = [
     { title: 'Relatórios', description: 'Acompanhe os relatórios do sistema.' },
     { title: 'Usuários', description: 'Gerencie os usuários cadastrados.' },
