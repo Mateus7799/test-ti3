@@ -1,0 +1,4 @@
+/* Personalizações extras se quiser */
+:host ::ng-deep .p-card {
+  border-radius: 0.5rem;
+}
